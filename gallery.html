@@ -34,6 +34,12 @@ session_start();
 		<link rel="stylesheet" href="assets/css/spacing.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 	 </head>
+
+	 <style>
+		.eapps-instagram-feed-title {
+			display: none !important;
+		}
+	 </style>
 	
 	<body>
 
@@ -129,6 +135,38 @@ session_start();
 			</div>
 		 </header>
 
+		 <!-- offcanvas area start -->
+ <div class="offcanvas__area">
+	<div class="modal fade" id="offcanvasmodal" tabindex="-1" aria-labelledby="offcanvasmodal" aria-hidden="true">
+	   <div class="modal-dialog">
+		   <div class="modal-content">
+			  <div class="offcanvas__wrapper">
+				 <div class="offcanvas__content">
+					<div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+					   <div class="offcanvas__logo logo">
+						  <a href="index.html">
+						  <img src="assets/img/logo/logo-dark.svg" alt="logo">
+						  </a>
+					   </div>
+					   <div class="offcanvas__close">
+						  <button class="offcanvas__close-btn" data-bs-toggle="modal" data-bs-target="#offcanvasmodal">
+							 <i class="fal fa-times"></i>
+						  </button>
+					   </div>
+					</div>
+					
+					<div class="mobile-menu fix"></div>
+					
+				 </div>
+			  </div>
+		   </div>
+	   </div>
+   </div>
+ </div>
+ <!-- offcanvas area end -->      
+ <div class="body-overlay"></div>
+ <!-- offcanvas area end -->
+
 		 <!-- breadcrumb area start -->
 		 <section class="breadcrumb__area include-bg pt-150 pb-150 breadcrumb__overlay" data-background="assets/img/backgrounds/mountains-12.jpg">
 			<div class="container">
@@ -156,6 +194,7 @@ session_start();
 			   <div class="row">
 				  <div class="col-xxl-9 col-xl-9 col-lg-9">
 					 <div class="brand__wrapper">
+						<h3>Imprints on Gram</h3>
 						<script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-a4d5fcdf-c4d0-4879-9087-6dcb550bf236"></div>
 						
@@ -168,7 +207,7 @@ session_start();
    
 						<ul class="nav-list">
 						   <li><a href="our-school.html">About the Adrian</a></li>
-						   <li><a href="about.html">Principal’s Profile</a></li>
+						   <li><a href="about.html#our-principal">Principal’s Profile</a></li>
    
 						   <li><a href="whyadrian.html">Why the Adrian?</a></li>
    
