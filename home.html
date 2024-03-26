@@ -790,9 +790,25 @@
 
    <script>
       $(document).ready(function () {
-         $("#myModal").modal('show');
+         $(window).scroll(function () {
+            // Calculate the height of the page
+            var windowHeight = $(window).height();
+            var documentHeight = $(document).height();
+            // Calculate the scroll position
+            var scrollPosition = $(window).scrollTop();
+            // Calculate the halfway point
+            var halfwayPoint = (documentHeight - windowHeight) / 2;
+
+            // If the scroll position is past the halfway point, show the modal
+            if (scrollPosition > halfwayPoint) {
+               $("#myModal").modal('show');
+               // Unbind the scroll event listener to prevent showing the modal multiple times
+               $(window).off('scroll');
+            }
+         });
       });
    </script>
+
 </body>
 
 <style>
