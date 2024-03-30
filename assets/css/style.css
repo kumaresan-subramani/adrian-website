@@ -10340,3 +10340,15 @@ p.checkout-coupon input[type=text]:focus {
 .quick-links ul li a:hover{
   background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(10,50,62,1) 76%);
 }
+
+
+.research__item {
+  padding: 40px 40px 15px;
+  height: 400px;
+}
+
+.research__item:hover{
+  box-shadow: 0px 8px 10px #ccc;
+  border-radius: 10px;
+}
+
