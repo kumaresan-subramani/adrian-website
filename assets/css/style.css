@@ -10352,3 +10352,7 @@ p.checkout-coupon input[type=text]:focus {
   border-radius: 10px;
 }
 
+
+.lunch-on-page-img .course__item {
+  padding: 10px;
+}
